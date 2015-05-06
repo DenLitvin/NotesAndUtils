@@ -1,0 +1,1 @@
+tcpdump -vvvs 1024 -l -A 'tcp port 8080' -i eth0
