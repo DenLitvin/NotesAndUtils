@@ -1,0 +1,31 @@
+To completely uninstall node + npm is to do the following:
+
+go to /usr/local/lib and delete any node and node_modules
+go to /usr/local/include and delete any node and node_modules directory
+if you installed with brew install node, then run brew uninstall node in your terminal
+check your Home directory for any local or lib or include folders, and delete any node or node_modules from there
+go to /usr/local/bin and delete any node executable
+Then download nvm and follow the instructions to install node. The latest versions of node come with npm, I believe, but you can also reinstall that as well.
+
+
+
+installing with n
+
+
+# Install node binary manager
+git clone https://github.com/visionmedia/n.git
+cd n
+sudo make install
+ 
+# Install latest version of node
+/usr/local/bin/n stable
+ 
+# Install mocha globally
+sudo /usr/local/bin/npm install -g mocha
+ 
+# Install istanbul globally
+sudo /usr/local/bin/npm install -g istanbul
+ 
+# Install local node modules in unit test directory
+cd test
+npm update
